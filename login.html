@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search Interface</title>
+  <style>
+    /* General Styles */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #e1e8f0;
+    }
+
+    .search-container {
+        display: flex;
+      align-items: center;
+      background-color: rgba(226, 23, 185, 0.5);
+      padding: 10px;
+      border-radius: 25px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Dropdown Styles */
+    .dropdown {
+      position: relative;
+    }
+
+    .dropbtn {
+      background-color: #a52a8f;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+
+    .dropbtn:hover {
+      background-color: #8c2474;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: white;
+      min-width: 200px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      color: #333;
+      padding: 10px 15px;
+      text-decoration: none;
+      display: block;
+      border-bottom: 1px solid #f1f1f1;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #f5f5f5;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    /* Search Input Styles */
+    .search-input {
+      border: 1px solid #dddddd;
+      border-radius: 20px;
+      padding: 10px 15px;
+      margin-left: 10px;
+      width: 300px;
+      outline: none;
+    }
+
+    .search-input:focus {
+      border-color: #a52a8f;
+      box-shadow: 0 0 5px rgba(149, 50, 131, 0.4);
+    }
+
+    /* Search Button Styles */
+    .search-btn {
+      background-color: #a52a8f;
+      border: none;
+      padding: 10px 15px;
+      margin-left: 10px;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+.search-btn:hover {
+  background-color: #8a116e;
+}
+</style>
+</head>
+<body>
+<div class="search-container">
+    <select>
+  <button class="dropbtn">Everything</button>
+  <div class="dropdown-content">
+    <option>Everything</option>
+    <option>Software Development</option>
+    <option>Web Development</option>
+    <option>Data Analyst</option>
+    <option>IT Consultant</option>
+    <option>Network Administrator</option>
+</select>
+</div>
+<input type="text" class="search-input" placeholder="Search Anything" 
+link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+<i class="fa-search"></i>
+<i class="fa-solid fa-magnifying-glass"></i>
+
+</body>
+</html>
